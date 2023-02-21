@@ -18,7 +18,7 @@ public class SqlSampler {
             //если множество ResultSet
            // statement.execute("");
             //один ResultSet
-            ResultSet rs = statement.executeQuery("SELECT * FROM students WHERE average_grade>7");
+            ResultSet rs = statement.executeQuery("SELECT * FROM students WHERE average_grade > 7");
             while (rs.next()) {
                 System.out.println(rs.getString("name"));
             }
@@ -26,8 +26,8 @@ public class SqlSampler {
            // statement.executeUpdate("INSERT INTO students VALUES()");
             statement.close();
             connection.close();
-        }  catch (SQLException throwables) {
-            throwables.printStackTrace();
+        }  catch (SQLException throwable) {
+            throwable.printStackTrace();
         } finally {
             try {
                 if (statement != null) {
