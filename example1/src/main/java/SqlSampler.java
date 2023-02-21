@@ -13,7 +13,7 @@ public class SqlSampler {
         Statement statement = null;
         try {
             connection =
-                DriverManager.getConnection("jdbc:sqlite:C:\\Users\\user\\Downloads\\sqlite-tools-win32-x86-3330000\\sqlite-tools-win32-x86-3330000\\mydb2.db");
+                DriverManager.getConnection("jdbc:sqlite:C:\\Program Files\\sqlite\\mydb2.db");
             statement = connection.createStatement();
             //если множество ResultSet
            // statement.execute("");
